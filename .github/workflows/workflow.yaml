@@ -5,3 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo '${{ toJSON(github) }}'
+  deploy-build:
+    uses: ${{ github.repository }}/.github/workflows/deploy.yaml@${{ github.ref }}
