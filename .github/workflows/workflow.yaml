@@ -2,5 +2,5 @@ on:
   workflow_call:
 jobs:
   deploy-build:
-    uses: ./.github/workflows/workflow.yml
+    uses: ./.github/workflows/workflow.yaml
     secrets: inherit
