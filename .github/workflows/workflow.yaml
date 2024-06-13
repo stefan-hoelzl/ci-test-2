@@ -1,7 +1,6 @@
 on:
   workflow_call:
 jobs:
-  job:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "HELLO WORLD"
+  deploy-build:
+    uses: ./.github/workflows/workflow.yml
+    secrets: inherit
