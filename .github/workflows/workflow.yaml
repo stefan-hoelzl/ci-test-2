@@ -5,6 +5,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo '${{ toJSON(github) }}'
-  deploy-build:
-    uses: ./.github/workflows/deploy.yaml
-    secrets: inherit
